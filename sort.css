@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'geoSansLight'; /*a name to be used later*/
+    src: url('Fonts/GeosansLight.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'openSans'; /*a name to be used later*/
+    src: url('Fonts/OpenSans-Light.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'oswald'; /*a name to be used later*/
+    src: url('Fonts/Oswald.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'georama'; /*a name to be used later*/
+    src: url('Fonts/Georama.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'textMeOne'; /*a name to be used later*/
+    src: url('Fonts/TextMeOne.ttf'); /*URL to font*/
+}
+.lightBody
+{
+    background-color: #c7e9fb;
+    background: linear-gradient(to top right, #9cd9ff, #f3f3f3,#dfb7ff);
+    /* background-image: url(pics/bluePurple.jpg);
+    background-size:contain; */
+}
+
+.lightH1
+{
+    background-color: rgba(255, 255, 255, 0.226);  
+    backdrop-filter: blur(4px);
+    filter:drop-shadow(0 0 5px rgb(223, 223, 223));
+    text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.404);
+    font-family: 'oswald';
+    font-size: 3.5em;
+    margin:5px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    border-radius:0.15em;
+}
+
+#main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightBox
+{
+    width: 50%;
+    height: 450px;
+    margin:10px auto 10px;
+    border-radius:0.3em;
+    background-color: rgba(255, 255, 255, 0.219);  
+    backdrop-filter: blur(4px);
+    filter:drop-shadow(0 0 5px rgb(223, 223, 223));
+    /* box-shadow: 0 0 20px 2px rgb(223, 223, 223); */
+    display: flex;
+    align-items: flex-end;
+    padding:0.7em;
+}
+
+.lightBar
+{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    justify-items: center;
+    font-family:"oswald";
+    font-size:1.2em;
+    display:inline-block;
+    padding: 0.5em;
+    margin:0.2em;
+    border-radius:0.2em;
+    /* background-color:#ec3f0a; */
+    background: linear-gradient(to top right, #00ffa9, #0440e4);
+    filter:drop-shadow(-3px 3px 2px #74ffdc);
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition:0.5s;
+}
+.lightBarChange
+{
+    color: rgb(247, 247, 247);
+    filter:drop-shadow(-3px 3px 2px #e092ff);
+    background: linear-gradient(to top right, #a32cdf, #106ad2);
+    transition:0.5s;
+}
+.lightButtonBox
+{
+    padding:0.5em;
+    margin:3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.226);  
+    backdrop-filter: blur(4px);
+    filter:drop-shadow(0 0 5px rgb(223, 223, 223));
+}
+.lightBubble , .lightSelection , .lightInsertion, .lightQuicksort, .lightRandomize
+{
+    width:120px;
+    height:45px;
+    font-family:"geoSansLight";
+    /* font-weight:bold; */
+    font-size:24px;
+    font-weight:bold;
+    border:0px solid rgb(70, 70, 70);
+    border-radius:0.3em;
+    /* box-shadow:0 0 2px 1px rgb(73, 73, 73); */
+    padding:0.2em;
+    margin:0.1em 0.8em 0.1em;
+    /* background-color:rgb(250, 183, 0); */
+    color:rgb(238, 238, 238);
+    background: linear-gradient(to bottom left, #3532d3,#1f1f1f 70%);
+    filter:drop-shadow(-2px 2px 2px #85adfd);
+    text-shadow: -3px 3px 4px rgba(7, 7, 7, 0.712);
+    flex-shrink: 1;
+    /* flex-grow: 1; */
+    transition:0.2s;
+}
+.lightBubble:hover , .lightSelection:hover , .lightInsertion:hover, .lightQuicksort:hover, .lightRandomize:hover
+{
+    color:rgb(240, 240, 240);
+    filter:drop-shadow(-2px 2px 2px #ff9edf);
+    background: linear-gradient(to top right, #ff0a6c, #3e02cc);
+    cursor:pointer;
+}
+
+.lightRandomize
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    color: rgb(240, 240, 240);
+    /* color:linear-gradient(to top right, #009fff, #3958e6); */
+    border:0px solid rgb(243, 243, 243);
+    font-size:21px;
+    font-weight:bold;
+    font-family:"geoSansLight";
+}
+.lightRandomize:hover
+{
+    color:rgb(240, 240, 240);
+    filter:drop-shadow(-2px 2px 2px #ff9edf);
+    background: linear-gradient(to top right, #ff0a6c, #3e02cc);
+    font:bold;
+    /* border:2.5px solid rgb(37, 50, 112); */
+    cursor:pointer;
+}
+.lightTheme
+{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    margin:0px 5px 0px;
+    font-family:textMeOne;
+    font-weight:bold;
+    font-size:27px;
+    background:linear-gradient(to top right, #f12711, #f5af19);
+    color:rgb(0, 0, 0);
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.712);
+    box-shadow:-2px 2px 5px 1px rgba(0, 0, 0, 0.466);
+    /* filter:drop-shadow(-2px 2px 2px #494949); */
+    border:0px;
+    transition:0.1s;
+}
+.lightTheme:hover
+{
+    cursor:pointer;
+}
+.lightTheme:active
+{
+    color: rgb(37, 37, 37);
+    background:linear-gradient(to top right, #fdfc47, #24fe41);
+}
+/* ------------------------------------DARK THEME------------------------------ */
+.darkBody
+{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='348' height='41.8' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10.7' stroke-opacity='0.3'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    /* background:rgb(8, 8, 8); */
+    /* background-image: url(pics/blackBack.jpg);
+    background-size:contain; */
+}
+.darkH1
+{
+    color:white;
+    /* background:linear-gradient(to top, #161616, #202020); */
+    background-color: rgba(0, 0, 0, 0.575);  
+    backdrop-filter: blur(1.5px);
+    filter:drop-shadow(0 0 0px rgba(44, 44, 44, 0.521));
+    box-shadow: inset 0px 0px 100px 1px rgba(68, 68, 68, 0.438);
+    text-shadow: -3px 3px 4px rgba(255, 255, 255, 0.404);
+}
+.darkBox
+{
+    color:white;
+    /* background:linear-gradient(to top, #161616, #202020); */
+    background-color: rgba(0, 0, 0, 0.39);  
+    backdrop-filter: blur(1.5px);
+    filter:drop-shadow(0 0 0px rgba(44, 44, 44, 0.521));
+    box-shadow: inset 0px 0px 100px 1px rgba(68, 68, 68, 0.438);
+    text-shadow: -3px 3px 4px rgba(255, 255, 255, 0.404);
+}
+/* .darkBox{
+    background: inherit;
+    overflow: hidden;
+   }
+.darkBox:before{
+    content: ‘’;
+    background: inherit; 
+    left: -25px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.363),0px 0px 30px 1px rgba(255, 255, 255, 0.11);
+    filter: blur(10px);
+} */
+.darkBox:before {
+    background: inherit;
+}
+.darkBar
+{
+    color:rgb(7, 7, 7);
+    background: linear-gradient(to top right, #f12711, #f5af19);
+    /* background-color: rgba(255, 255, 255, 0.021);   */
+    backdrop-filter: blur(5px);
+    filter:drop-shadow(0 0 0px rgba(44, 44, 44, 0.521));
+    box-shadow: inset -1px 1px 50px 1px rgb(255, 115, 1);
+    text-shadow: -0.4px 0.4px 2px rgba(7, 7, 7, 0.712);
+}
+.darkBarChange
+{
+    background: linear-gradient(to top right, #fdfc47, #24fe41);
+    box-shadow: inset -1px 1px 20px 1px rgba(43, 255, 1, 0.548);
+}
+.darkButtonBox
+{
+    color:white;
+    /* background:linear-gradient(to top, #161616, #202020); */
+    background-color: rgba(0, 0, 0, 0.575);  
+    backdrop-filter: blur(1.5px);
+    filter:drop-shadow(0 0 0px rgba(44, 44, 44, 0.521));
+    box-shadow: inset 0px 0px 100px 1px rgba(68, 68, 68, 0.438);
+    text-shadow: -3px 3px 4px rgba(255, 255, 255, 0.404);
+}
+.darkBubble , .darkSelection , .darkInsertion, .darkQuicksort, .darkRandomize
+{
+    background: linear-gradient(to top right, #1a1b1b, #414345);
+    filter:drop-shadow(0px 0px 0px #ffe70e00);
+    /* color:linear-gradient(to top right, #f12711, #f5af19); */
+    text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.712);
+    box-shadow: -1px 1px 3px 1px rgb(255, 115, 0);
+}
+.darkBubble:hover , .darkSelection:hover , .darkInsertion:hover, .darkQuicksort:hover, .darkRandomize:hover
+{
+    background: linear-gradient(to top, #1a1b1b, #414345);
+    filter:drop-shadow(0px 0px 0px #ffe70e00);
+    /* color:linear-gradient(to top right, #f12711, #f5af19); */
+    text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.712);
+    box-shadow: -1px 1px 3px 1px rgb(166, 255, 0);
+}
+.darkRandomize
+{
+    background: linear-gradient(to top , #232526, #414345);
+    filter:drop-shadow(0px 0px 0px #ffe70e00);
+    /* color:linear-gradient(to top right, #f12711, #f5af19); */
+    text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.712);
+    /* box-shadow: inset 0px 0px 10px 1px rgba(252, 221, 49, 0.822); */
+}
+.darkRandomize:hover
+{
+    background: linear-gradient(to top right, #1a1b1b, #414345);
+    filter:drop-shadow(0px 0px 0px #ffe70e00);
+    /* color:linear-gradient(to top right, #f12711, #f5af19); */
+    text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.712);
+    box-shadow: -1px 1px 3px 1px rgb(166, 255, 0);
+}
+.darkTheme
+{
+    background:linear-gradient(to top right, #00ffa9, #02b7ff);
+    color:rgb(0, 0, 0);
+    text-shadow: -0.4px 0.4px 2px rgba(7, 7, 7, 0.712);
+    border:2px solid rgba(255, 255, 255);
+    box-shadow: inset -3px 3px 8px 1px rgba(252, 252, 252, 0.671);
+}
+.darkTheme:active
+{
+    background:linear-gradient(to top right, #d400ff, #02b7ff);
+    color:rgb(0, 0, 0);
+    text-shadow: -0.4px 0.4px 2px rgba(7, 7, 7, 0.712);
+    border:2px solid rgba(255, 255, 255);
+    box-shadow: inset -3px 3px 8px 1px rgba(252, 252, 252, 0.671);
+}
