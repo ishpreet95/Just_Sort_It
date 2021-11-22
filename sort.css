@@ -18,6 +18,10 @@
     font-family: 'textMeOne'; /*a name to be used later*/
     src: url('Fonts/TextMeOne.ttf'); /*URL to font*/
 }
+html{
+    margin:0px;
+    height:100%;
+}
 .lightBody
 {
     background-color: #c7e9fb;
